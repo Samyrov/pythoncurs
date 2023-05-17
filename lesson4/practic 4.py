@@ -13,10 +13,10 @@ for i in range(len(notes)):
         counts[i] = count
         remainder -= count * notes[i]
 
-if remainder < 0:
-    print("Неможливо видати суму максимальними банкнотами.")
+if remainder > 0:
+    print("Неможливо видати суму мінімальними банкнотами.")
 else:
-    print("Максимальна кількість банкнот:")
+    print("Мінімальна кількість банкнот:")
     for i in range(len(notes)):
         if counts[i] > 0:
             print(str(notes[i]) + " x " + str(counts[i]))
